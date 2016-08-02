@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dip"
+        android:text="  身份注册  "
+        android:textColor="#ff33b5e5"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="#ff33b5e5" />
+
+    <RadioGroup
+        android:id="@+id/job_rbtn01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/layout1laoshi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dip">
+
+            <TextView
+                android:id="@+id/txtlaoshi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="老师"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/job_rbt03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/txtlaoshi" />
+
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:background="#ff99cc00" />
+        <RelativeLayout
+            android:id="@+id/layout1stu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dip">
+
+            <TextView
+                android:id="@+id/txtstu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="学生"
+                android:textSize="16sp"/>
+
+            <RadioButton
+                android:id="@+id/job_rbt04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+    </RadioGroup>
+
+</LinearLayout>

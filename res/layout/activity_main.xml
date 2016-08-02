@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linear1"
+    android:background="@color/colorWhite"
+    tools:context="${relativePackage}.${activityClass}" 
+    android:orientation="vertical">
+
+   <RelativeLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorBlack"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/main002_btn_user"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape2"
+            />
+
+        <TextView
+            android:id="@+id/main_tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Gally"
+            android:textSize="25dp"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@+id/main002_btn_user"
+            />
+        <Button
+            android:id="@+id/main002_btn_add"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/plussign"   />
+            <!--android:onClick="OnMySelfClick"-->
+
+    </RelativeLayout>
+    <com.example.lesson.SlidingItemListView
+        android:id="@+id/main002_lv_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:cacheColorHint="#000000"
+        android:divider="#dddbdb"
+        android:dividerHeight="1dp" />
+</LinearLayout>
+
+
+

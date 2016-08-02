@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#E54141"
+        android:orientation="horizontal"
+        android:paddingRight="16dp">
+
+        <Button
+            android:id="@+id/add_btn_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:background = "@drawable/back"/>
+            <Button
+            android:id="@+id/add_btn_search"
+            android:layout_width="40dp"
+             android:layout_height="40dp"
+             android:background="@drawable/search"/>
+        <EditText
+            android:id="@+id/add_et_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="8dp"
+            android:gravity="start|center_vertical"
+            android:hint="输入Teacher名字"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+        <ImageView
+            android:id="@+id/add_iv_DeleteText"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="@drawable/wrong"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:id="@+id/add_tv_tip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:textSize="20dp"
+                    android:text="历史搜索" />
+
+                <View
+                    android:layout_width="350dp"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGray"></View>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE"></View>
+                <com.example.lesson.SearchListView
+                    android:id="@+id/add_lv_listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </com.example.lesson.SearchListView>
+
+                <TextView
+                    android:id="@+id/add_tv_clear"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#F6F6F6"
+                    android:gravity="center"
+                    android:text="清除搜索历史" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:background="#EEEEEE"></View>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

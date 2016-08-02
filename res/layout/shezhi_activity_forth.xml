@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:background="@drawable/shape">
+        <ImageView
+            android:id="@+id/dashangjilu_btn_goback"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="13dp"
+            android:scaleType="centerInside"
+            android:background="@drawable/white_goback"
+
+
+            />
+        <TextView
+            android:id="@+id/dashangjilu_tv_dsjl"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="打赏记录"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="26dp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

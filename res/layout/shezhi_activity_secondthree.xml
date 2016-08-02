@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:background="@drawable/shape">
+        <ImageView
+            android:id="@+id/gengaidianhuahaoma_btn_goback"
+            android:clickable="true"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/white_goback"
+            />
+        <TextView
+            android:id="@+id/gengaidianhuahaoma_tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:text="更改电话号码"
+            android:textColor="@color/colorWhite"
+            android:textSize="25dp"/>
+        <Button
+            android:id="@+id/gengaidianhuahaoma_btn_save"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:clickable="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="300dp"
+            android:text="保存"
+            android:textSize="13dp"
+            android:background="@drawable/button_selector"
+            android:textColor="@color/colorBlack"
+
+            />
+    </RelativeLayout>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/gengaidianhuahaoma_et_sign"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+
+        />
+
+
+</LinearLayout>

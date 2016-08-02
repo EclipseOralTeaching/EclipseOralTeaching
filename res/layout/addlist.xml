@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeNumber"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_below="@+id/relativeLayout1"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:gravity="center_horizontal">
+
+    <EditText
+        android:id="@+id/eT_editName_LV"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:hint="@string/hint"
+        android:textColorHint="@color/color_gray_light"
+        android:textColor="@color/color_gray_light"
+        android:ems="10" />
+
+    <ImageButton
+        android:id="@+id/iBtn_addNumber_LV"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:focusable="true"
+        android:layout_toRightOf="@+id/eT_editName_LV"
+        android:background="@drawable/plus_sign"
+        android:paddingLeft="50dp"/>
+
+    <ImageButton
+        android:id="@+id/iBtn_galleryInfo_LV"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/black_right_arrow"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iBtn_addNumber_LV"
+        android:layout_toEndOf="@+id/iBtn_addNumber_LV" />
+</RelativeLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/activitymain_rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/color_gray_dark"
+        android:foregroundGravity="center_horizontal"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/titlebar_ll_backBTN2"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/back_btn_white" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/activitymain2_tv_title2"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/main1name"
+            android:textColor="@color/color_white"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/activitymain2_tv_editTitle2"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/edit_btn"
+            android:textColor="@color/color_white"
+            android:textSize="30sp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/activityPicsSelecting_iv_backIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true" />
+
+    <TextView
+        android:id="@+id/activityPicsSelecting_tv_selectimgSend"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:id="@+id/activityPicsSelecting_sv_selectimg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="110dp"
+                android:background="#eef1eff5">
+
+                <HorizontalScrollView
+                    android:id="@+id/activityPicsSelecting_hs_horizontalScrollView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal">
+
+                        <GridView
+                            android:id="@+id/activityPicsSelecting_gv_noScrollgridview"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:fastScrollEnabled="true"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:horizontalSpacing="0dp"
+                            android:scrollbars="none"
+                            android:scrollingCache="false"
+                            android:stretchMode="spacingWidthUniform"
+                            android:verticalSpacing="1dp"></GridView>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <TextView style="@style/long_lines_style" />
+
+                <EditText
+                    android:id="@+id/activityPicsSelecting_et_commentContent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:gravity="left|top"
+                    android:textColor="#6F6F6F"
+                    android:textColorHint="#b9b9b9"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activityPicsSelecting_ll_relativeLayoutBelow"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="#eef1eff5" />
+
+                <TextView style="@style/long_lines_style" />
+
+                <Button
+                    android:id="@+id/activityPicsSelecting_btn_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/bt_nobgd"
+                    android:gravity="center"
+                    android:text="#"
+                    android:textColor="#ff909a"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

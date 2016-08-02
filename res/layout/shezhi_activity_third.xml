@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:background="@drawable/shape">
+        <ImageView
+            android:id="@+id/dashang_btn_goback"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="13dp"
+            android:scaleType="centerInside"
+            android:background="@drawable/white_goback"
+
+
+            />
+        <TextView
+            android:id="@+id/dashang_tv_dashang"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginTop="6dp"
+            android:text="打赏"
+            android:textColor="@color/colorWhite"
+            android:textSize="25dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

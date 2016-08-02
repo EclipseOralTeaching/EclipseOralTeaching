@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/colorGray"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+
+        android:background="@drawable/shape">
+        <ImageView
+            android:id="@+id/shenfenxinxi_btn_goback"
+            android:clickable="true"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="30dp"
+            android:scaleType="centerInside"
+            android:background="@drawable/white_goback"
+            />
+        <TextView
+            android:id="@+id/shenfenxinxi_tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="150dp"
+            android:text="名字"
+            android:textColor="@color/colorWhite"
+            android:textSize="25dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/shape1">
+        <TextView
+            android:id="@+id/shenfenxinxi_tv_sign"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="150dp"
+            android:text="个性签名"
+            android:textSize="20dp"/>
+        <Button
+            android:id="@+id/shenfenxinxi_btn_sign"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:clickable="true"
+            android:background="@drawable/pen"
+            android:layout_toRightOf="@id/shenfenxinxi_tv_sign"/>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/shenfenxinxi_iv_head"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+
+
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/shenfenxinxi_rl_tobackname"
+        android:layout_height="60dp"
+        android:clickable="true"
+        android:background="@drawable/shape1"
+        android:layout_marginTop="180dp">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorBlack"
+            android:text="昵称:"
+            android:textSize="17dp"
+            android:layout_marginTop="17dp"
+            android:gravity="left"/>
+        <TextView
+            android:id="@+id/shenfenxinxi_tv_tobackname"
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:text="名字"
+            android:gravity="right"
+            android:layout_marginTop="17dp"
+            android:textColor="@color/colorBlack"
+
+            android:layout_marginLeft="200dp"
+            android:textSize="17dp"/>
+        <ImageView
+
+            android:layout_width="34dp"
+
+            android:layout_marginLeft="340dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerInside"
+            android:layout_height="34dp"
+            android:background="@drawable/toback"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:clickable="true"
+        android:id="@+id/shenfenxinxi_rl_tobacknumber"
+        android:background="@drawable/shape1"
+        android:layout_marginTop="245dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="电话号码:"
+            android:textColor="@color/colorBlack"
+            android:textSize="17dp"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/shenfenxinxi_tv_tobacknumber"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="数字"
+            android:textColor="@color/colorBlack"
+            android:gravity="right"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="190dp"
+            android:textSize="17dp"/>
+        <ImageView
+
+            android:layout_width="34dp"
+
+            android:layout_marginLeft="340dp"
+            android:scaleType="centerInside"
+            android:layout_marginTop="15dp"
+            android:layout_height="34dp"
+            android:background="@drawable/toback"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/shenfenxinxi_rl_tobacksex"
+        android:clickable="true"
+        android:background="@drawable/shape1"
+        android:layout_marginTop="310dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="性别:"
+            android:textColor="@color/colorBlack"
+            android:textSize="17dp"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/shenfenxinxi_tv_tobacksex"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:text="性别"
+            android:layout_marginTop="18dp"
+            android:textColor="@color/colorBlack"
+            android:gravity="right"
+            android:layout_marginLeft="200dp"
+            android:textSize="17dp"/>
+        <ImageView
+
+            android:layout_width="34dp"
+            android:scaleType="centerInside"
+            android:layout_marginLeft="340dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="34dp"
+            android:background="@drawable/toback"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/shape1"
+        android:clickable="true"
+        android:id="@+id/shenfenxinxi_rl_tobackjob"
+        android:layout_marginTop="375dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="身份注册:"
+            android:textColor="@color/colorBlack"
+            android:textSize="17dp"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/shenfenxinxi_tv_tobackjob"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:text="身份"
+            android:textColor="@color/colorBlack"
+            android:gravity="right"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="200dp"
+            android:textSize="17dp"/>
+        <ImageView
+
+            android:layout_width="34dp"
+            android:scaleType="centerInside"
+            android:layout_marginLeft="340dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="34dp"
+            android:background="@drawable/toback"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/shenfenxinxi_rl_tobackgrjj"
+        android:clickable="true"
+        android:background="@drawable/shape1"
+        android:layout_marginTop="440dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="个人简介:"
+            android:textColor="@color/colorBlack"
+            android:textSize="17dp"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/shenfenxinxi_tv_tobackgrjj"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:text="简介"
+            android:textColor="@color/colorBlack"
+            android:gravity="right|center"
+
+            android:layout_marginLeft="100dp"
+            android:textSize="17dp"/>
+        <ImageView
+
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="340dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerInside"
+            android:background="@drawable/toback"
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

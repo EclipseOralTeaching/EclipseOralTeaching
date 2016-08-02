@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:background="@drawable/shape">
+        <ImageView
+            android:id="@+id/help_btn_goback"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:scaleType="centerInside"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/white_goback"
+
+
+            />
+        <TextView
+            android:id="@+id/help_tv_help"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="帮助与反馈"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="25dp"/>
+    </RelativeLayout>
+</LinearLayout>
